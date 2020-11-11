@@ -1,0 +1,36 @@
+html body{
+	margin: 0%;
+	padding: 0%;
+}
+
+div.background{
+	display: block;
+	padding-bottom: 50px;
+	background-color: white;
+	min-height: calc(100vh - 50px);
+}
+
+div.heading{
+	position: relative;
+	display: flex;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 2%;
+	align-items: baseline;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+div.heading h1, i{
+	display: inline;
+	color:  rgb(249, 150, 1);
+}
+
+div.heading h1{
+	font-family: 'FontName', sans-serif;
+	font-size: 2.8vw;
+}
+
+div.heading i{
+    font-size: 3vw;
+}

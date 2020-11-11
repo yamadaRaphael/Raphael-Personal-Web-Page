@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@font-face{
+	font-family: 'FontName';
+	src: url("../fonts/Karla/Karla-Regular.ttf")
+}
+
+@font-face{
+	font-family: 'Historia_signature';
+	src: url("../fonts/Historia_signature/historia.regular.ttf")
+}
+
+body{
+	margin: 0%;
+	padding: 0%;
+}
+/*General Settings*/
+h1.title{
+    display: inline;    
+    font-size: 1.7vw;
+    border-bottom: solid rgb(249, 150, 1);
+}
+
+p.text{
+    display: inline-block;
+    font-family: 'FontName', sans-serif;
+    font-size: 1vw; /*12pt*/
+    line-height: 2.0;
+    text-align: left;
+}
+
+p.category{
+    display: inline-block;
+    font-family: 'FontName', sans-serif;
+    font-size: 1.166vw; /*14pt*/
+}
+
+/*Section*/
+section{
+    position: relative;
+    display: block;
+    left: 10%;
+    width: 55%;
+    float: left;     
+}
+
+section p{
+    text-indent: 25px;
+    text-align: justify;
+    margin-bottom: 0%;
+    display: inline-block;
+    font-family: 'FontName', sans-serif;
+    font-size: 12pt;
+    line-height: 2.0;
+    text-align: left;
+}
+
+section a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(249, 150, 1);
+}
+
+section i#contactIcon{
+    display: inline;
+    margin-left: 0.5%;
+}
+
+/*Read More inside Section*/
+span.readMore{
+    display: none;
+}
+
+div.divReadMore{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+div.divReadMore hr{
+    display: inline-block;
+    width: 44%;
+    vertical-align: middle;
+}
+
+div.divReadMore button{
+    width: 3%;
+    padding: 0%;
+    background-color: #818181;
+    color: rgb(249, 150, 1);
+}
+
+div.divReadMore i{
+    display: block;
+    font-size: 1vw;
+}
+
+/*Signature inside Section*/
+section h2{
+    display: block;
+    font-family: 'Historia_signature';
+    font-size: 5.41vw;
+    margin: 4% 0% 0% 5%;
+}
+
+/*Personal Information Section*/
+aside.personalInfo{
+    display: block;
+    width: fit-content;
+    margin-right: 10%;
+    float: right;
+}
+
+/* Button div with effects inside Personal Information Section*/
+div.button{
+    position: relative;
+    display: block;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+a.btn{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    color: rgb(249, 150, 1);
+    font-size: 1.1vw;
+    font-family:'FontName', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;       
+    margin:0%;
+    padding: 2%;
+    border: 2px solid rgb(249, 150, 1);    
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+a.btn::before{
+    background: rgb(249, 150, 1);        
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.7s ease-in-out;
+}
+
+a.btn1::before{
+    width: 0;
+    height: 100%;
+}
+
+a.btn1:hover::before{
+    width: 100%;
+}
+
+a.btn1:hover,
+a.btn1:hover:focus{
+    color: white;
+}
+
+/*Service Section*/
+div.service{
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 40% auto 0% auto;
+    text-align: center;
+}
+
+div.service h1{
+    width: fit-content;
+    margin: 3% auto;
+    font-family: 'FontName', sans-serif;
+    font-size: 1.5vw; /*18pt*/
+    border-bottom: solid rgb(249, 150, 1);
+}
+
+div.flexContainerService{
+    display: flex;
+    flex-direction: row;
+    margin: 0% 10% 0% 10%;
+}
+
+div.flexContainerService div{
+    margin: 0% 1.5% 0% 1.5%;
+}
+
+div.flexContainerService i{
+    font-size: 2.75vw; /*33pt*/
+    color:  rgb(249, 150, 1);
+}
+
+h2.subtitleService{
+   font-size: 1.5vw;
+}
+
+div.flexContainerService p{
+    margin: 1%;
+    text-align: justify;
+}
+
+/*Companies Section*/
+div.companyFlag{
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+div.companyFlag img{
+    vertical-align: middle;
+    width: 4vw;
+    margin: 0% 2% 0% 2%;
+}
+
+h1.subTitle{
+    display: inline-block;
+    font-family: 'FontName', sans-serif;
+    font-size: 1.4vw;
+    border-bottom: solid rgb(249, 150, 1);
+}
+
+/*Slick Carouse Section*/
+div.slick{
+    position: relative;
+    text-align: center;
+    margin: 2% auto;
+    width: 70%;
+    /* height: 100%; */
+}
+
+.slick-slide {
+    margin-left: 2%;
+}
+
+.slick-slide img{
+    transition: all 0.5s ease-in-out;
+    width: 65%;
+    height: 100%;
+}
+
+.slick-slide img:hover{
+    transform: scale(1.2);
+}
+
+/*Buttons Slick Carouse Section*/
+button#prev{
+    position: absolute;
+    width: fit-content;
+    padding: 0%;
+    background-color: #818181;
+    top: 45%;
+    left: -5%;
+}
+
+button#prev i{
+    display: block;
+    font-size: 1.3vw;
+    color:  rgb(249, 150, 1);
+}
+
+button#next{
+    position: absolute;
+    width: fit-content;
+    padding: 0%;
+    background-color: #818181;
+    color: rgb(249, 150, 1);
+    top: 45%;
+    right: -5%;
+}
+
+button#next i{
+    display: block;
+    font-size: 1.3vw;
+    color:  rgb(249, 150, 1);
+}
+
+.slick-dots li.slick-active button:before {
+    color:   rgb(249, 150, 1);
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    color: #818181;
+    opacity: 1;
+}

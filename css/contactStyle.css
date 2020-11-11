@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@font-face{
+	font-family: 'FontName';
+	src: url("../fonts/Karla/Karla-Regular.ttf")
+}
+
+@font-face{
+	font-family: 'FontJosefin';
+	src: url("../fonts/Josefin_Sans/JosefinSans-Regular.ttf")
+}
+
+body{
+	margin: 0%;
+	padding: 0%;
+}
+
+/*SubHeading Section*/
+div.subHeading{
+	width: fit-content;
+	margin: auto;
+	text-align: center; 
+}
+
+div.subHeading h2{
+    font-family: 'FontName', sans-serif;
+    font-size: 1.6vw; /*18pt*/
+	border-bottom: solid rgb(249, 150, 1);  
+}
+
+/*Info Session*/
+form{
+	position: relative;
+	width: fit-content;
+	margin: 3% auto;
+	text-align: center;
+}
+
+/*Div nameEmail and textArea*/
+div.nameEmail{
+	position: relative;
+	display: inline;
+	margin: 3% 5% auto 5%;
+}
+
+div.textArea{
+	position: relative;
+	width: fit-content;
+	margin-top: 5%;
+}
+
+div.nameEmail i, div.textArea i{
+	font-size: 1.4vw; /*16pt*/
+	color: rgb(249, 150, 1);
+}
+
+div.nameEmail input.text-field-input, div.textArea input.text-field-input{
+	width: 25%;
+	font-size: 1vw;
+	font-family: 'FontJosefin', sans-serif;	
+	line-height: 2.0;
+}
+
+div.textArea textarea.text-field-input{
+	font-size: 1vw;
+	font-family: 'FontJosefin', sans-serif;	
+	vertical-align: top;
+}
+
+/*Label effect*/
+div.nameEmail.focused label, div.textArea.focused label{
+	transition: all .2s linear;
+	top: -2vw;
+}
+  
+label{
+	position: absolute;
+	top: 0px;
+	margin: 2px 5px;
+	line-height: 1.4em;
+	font-size: 0.8vw; /*10pt;*/
+	font-family: 'FontJosefin', sans-serif;	
+	background: #FFF;
+	padding: 0 10px;
+	transition: all .2s linear;
+}  
+
+/*Button div with effects*/
+button.btn{
+    position: relative;
+	display: flex;
+	margin: 3% auto;
+	padding: 10px;  
+	text-transform: uppercase;	
+	color: rgb(249, 150, 1);
+	background-color: white;
+	border: 2px solid rgb(249, 150, 1);
+    font-size: 1vw; /*14px*/
+    font-family:'FontName', sans-serif;
+    font-weight: bolder;
+    transition: 1s all ease;
+}
+
+button.btn:hover,button.btn:hover:focus{
+	color: white;
+	background-color: rgb(249, 150, 1);
+}
+
+/*Icons Sections*/
+div.icons{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin: 2% auto;
+	text-align: center;	
+	justify-content: space-between;
+}
+
+/*Adjustment center icon*/
+div#iconsDescriptions{
+	margin-right: 6%;
+}
+
+div.icons i{
+	font-size: 2.5vw; /*20pt*/
+	color:  rgb(249, 150, 1);
+}
+
+div.icons p{
+	margin: 0;
+	font-size: 0.9vw; /*12pt*/
+	font-family: 'FontName', sans-serif;
+}
+
+/*Google maps*/
+iframe{
+	position: relative;
+	display: block;
+	width: 80%;
+	margin: 3% auto;
+	border: 2px solid black;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content h1{
+	font-family: 'FontName', sans-serif;
+	font-size: 20pt;
+	text-align: center;
+	border-bottom: 1px solid rgb(249, 150, 1);
+	
+}
+
+.modal-body h2{
+	font-family: 'FontName', sans-serif;
+	font-size: 16pt;
+	text-align: center;
+}
+
+.modal-body p{
+	font-family: 'FontName', sans-serif;
+	font-size: 14pt;
+	text-align: center;
+}
+
+/* The Close Button */
+.close {
+	margin-top: -2%;
+	color: #aaa;
+	float: right;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

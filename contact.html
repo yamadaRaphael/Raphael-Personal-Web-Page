@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1.0"/>
+        <title>Yamada - VCard/Contact Me</title>
+        <!--Font Awesome-->
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+        <!--Animate css-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+        <!--Share StyleSheet-->
+        <link rel="stylesheet" type="text/css" href="./css/shareStyle.css">
+        <!--Contact StyleSheet-->
+        <link rel="stylesheet" type="text/css" href="./css/contactStyle.css">
+        <!--JQuery-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <div class="background animated fadeInRight" id="background">
+            <div class="heading" id="headingDashline">
+                <h1>Contact Me.</h1>
+                <i class="far fa-user"></i>
+            </div>
+            <div class="subHeading">
+                <h2>Let's Talk</h2>
+            </div>
+            <form class="info" name="form" action="./php/contact.php" method="POST">
+                <div class="nameEmail">
+                    <i class="fas fa-user"></i>
+                    <label for="fullName">Full Name:</label>
+                    <input class="text-field-input" type="text" name="fullName" id="fullName" required>
+                </div>             
+                <div class="nameEmail">
+                    <i class="fas fa-envelope"></i>
+                    <label for="email">Email:</label>
+                    <input class="text-field-input" type="email" name="email" id="email" required>
+                </div>   
+                <div class="textArea">
+                    <i class="fas fa-comment-dots"></i>
+                    <label for="message">How can I help you?</label>
+                    <textarea  class="text-field-input" name="comment" rows="10" cols="100" required></textarea>
+                </div>
+                <button type="submit" name="submit" class="btn" id="myBtn">Send Message</button>
+            </form>
+            <div class="icons">
+                <div class="iconsDescriptions">
+                    <i class="fas fa-paper-plane"></i>
+                    <p>raphael_yada@hotmail.com</p>            
+                </div>
+                <div id="iconsDescriptions">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>520, 10th Street</p> 
+                    <p>New Westminster, Canada</p>            
+                </div>
+                <div class="iconsDescriptions">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 (604) 704-6912</p>
+                </div>  
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.568285500866!2d-122.92886224875458!3d49.208748783825804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d877e52158ef%3A0x6f91a088b10aa5a4!2s520%2010th%20St%2C%20New%20Westminster%2C%20BC%20V3M%203Z6%2C%20Canada!5e0!3m2!1sen!2sus!4v1585178308366!5m2!1sen!2sus" width="600" height="600"  allowfullscreen="" aria-hidden="false" tabindex="0" scrolling="no"></iframe>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" id="modalHeader">   
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!--Materialize Label-->
+            <script type="text/javascript" src="./javascript/materializeInput/labelEffects.js"></script>
+            <!--Theme changed-->
+            <script type="text/javascript" src="./javascript/themeLanguageChanged/contact.js"></script>
+            <!--Modal trigger from contact.php-->
+            <script type="text/javascript" src="./javascript/modal/modalfromphp.js"></script>
+        </div>        
+    </body>
+</html>

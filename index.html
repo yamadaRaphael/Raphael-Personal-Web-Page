@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--Portfolio based on Cosmos-Themes
+    Developed by Raphael T Yamada-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1.0"/>
+        <title>Raphael.T Yamada</title>
+        <!--Font Awesome-->
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+        <!--Animate css-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+        <!--JQuery-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!--Theme changed-->
+        <script type="text/javascript" src="./javascript/themeLanguageChanged/themeChangedIndex.js"></script>
+        <!--Language changed-->
+        <script type="text/javascript" src="./javascript/themeLanguageChanged/languageChangedIndex.js"></script>
+        <!--Index StyleSheet-->
+        <link rel="stylesheet" type="text/css" href="css/indexMenuStyle.css"/>
+    </head>
+    <body>
+        <div id="navContainer">
+            <nav id="menu">
+                <ul>
+                    <img src="./media/pictures/Raphael_Photo.jpg" alt="Raphael Profile Photo">
+                    <h1>RAPHAEL TOMOHIKO YAMADA</h1>
+                    <li >
+                        <a href="home.html" target="iFrame">
+                            <i class="fa fa-home">
+                                <span class="lang" key="home">Home</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutMe.html" target="iFrame">
+                            <i class="fas fa-user">
+                                <span class="lang" key="aboutMe">About Me</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resume.html"target="iFrame">                        
+                            <i class="fa fa-address-card">
+                                <span class="lang" key="resume">Resume</span>
+                            </i>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="portfolio.html"target="iFrame">                        
+                            <i class="fa fa-briefcase">
+                                <span class="lang" key="portifolio">Portfolio</span>
+                            </i>
+                        </a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="contact.html" target="iFrame">
+                            <i class="fa fa-envelope" key="contact">
+                                <span class="lang" key="contact">Contact</span>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <a href="https://www.facebook.com/raphael.yamada" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/yamadaraphael山田" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                <div class="theme">
+                    <input type="radio" id="day" name="theme" value="day" onclick="radioOption(this.value)" checked ><label for="day" class="lang" key="day">Day Theme</label>
+                    <input type="radio" id="night" name="theme" value="night" onclick="radioOption(this.value)"><label for="night" class="lang" key="night">Night Theme</label>                        
+                </div>
+                <p>2019 &copy; Raphael Tomohiko Yamada</p>            
+                <div class="language">
+                <!--
+                    <a href="#eng#" class="translate" id="eng"><img src="./media/pictures/flags/United Kingdom.jpeg"></a>
+                    <a href="#pt#" class="translate" id="pt"><img src="./media/pictures/flags/Brazil.jpg"></a> 
+                -->
+                </div>            
+            </footer>
+        </div> 
+        <iframe id="iFrame" src="home.html" name="iFrame"></iframe>
+    </body>
+</html>

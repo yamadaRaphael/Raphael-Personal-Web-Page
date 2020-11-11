@@ -1,0 +1,4 @@
+[29-Apr-2020 20:20:20 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'SMTP' not found in /home1/yamadar/public_html/php/contact.php:10
+Stack trace:
+#0 {main}
+  thrown in /home1/yamadar/public_html/php/contact.php on line 10

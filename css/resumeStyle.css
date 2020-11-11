@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@font-face{
+	font-family: 'FontName';
+	src: url("../fonts/Karla/Karla-Regular.ttf")
+}
+
+@font-face{
+	font-family: 'FontCarrois';
+	src: url("../fonts/Carrois_Gothic/CarroisGothic-Regular.ttf")
+}
+
+@font-face{
+	font-family: 'FontJosefin';
+	src: url("../fonts/Josefin_Sans/JosefinSans-Regular.ttf")
+}
+
+body{
+	margin: 0%;
+	padding: 0%;
+}
+
+/*General Settings*/
+h2{
+    position: relative;
+    display: block;
+    width: fit-content;
+    font-family: 'FontName', sans-serif;
+    font-size: 1.6vw; /*18pt*/  
+}
+
+/*Experience / Education column/row */
+div.column{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;   
+    left: 9.4%;
+    width: 40.5%;
+}
+
+h2.h2ExpEduc{
+    margin: auto;
+    border-bottom: solid rgb(249, 150, 1);    
+}
+
+div.box{
+    margin-top: 3%;
+    padding-left: 12%;
+}
+
+/*Div expEducTitle / companyInstitution /  info */
+div.expEducTitle{
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'FontJosefin', sans-serif;
+    font-size: 1vw; /*12pt*/
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+div.companyInstitution{
+    margin-top: 1%;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'FontName', sans-serif;
+    font-size: 1vw; /*12pt*/
+    font-weight: bold;
+    color: rgb(249, 150, 1);
+}
+
+div.info{
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 3.5%;
+    font-family: 'FontName', sans-serif;
+    font-size: 1.2vw; /*12pt*/
+    line-height: 2;
+    text-align: left;
+}
+
+/*Timeline points Settings*/
+/*Cesar check*/
+div.box ul li{
+    position: relative;
+    margin: 50px 35px 70px;    
+    list-style: none;
+}
+
+div.box ul li >span{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    left: -24px;
+    border: 1px solid rgb(249, 150, 1);    
+}
+
+div.box ul li > span::before, div.box ul li > span::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1.1vw;
+    height: 1.1vw;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid  rgb(249, 150, 1);
+    left: -0.7vw;
+}
+
+div.box ul li > span::before{
+    top: -12px;    
+}
+
+div.box ul li >span::after{
+    top: 100%;
+}
+
+div.box div.time span{
+    position: absolute;
+    white-space: nowrap;
+    font-family: 'FontCarrois', sans-serif;
+    color: black;
+    font-size: 1vw; /*11pt*/;
+    left: -110px;
+}
+
+div.box div.time span:first-child{
+    top: -4%;
+}
+
+div.box div.time span:last-child{
+    top: auto;
+}
+
+/*Skills column/row */
+
+h2.subTitle2{    
+    margin: 0% auto;
+    font-family: 'FontName', sans-serif;
+    font-size: 1.4vw; /*18pt*/
+    border-bottom: solid rgb(249, 150, 1);    
+}
+
+h2.skills{
+    margin-left: 12%;
+    font-family: 'FontJosefin', sans-serif;
+    font-size: 0.8vw; /*10pt*/ 
+}
+
+div.progress{
+    margin: 0% auto;
+    width: 75%;
+    background-color: transparent;
+}
+
+div.bar{
+    font-size: 1vw;
+    background-color: rgb(249, 150, 1);
+    text-align: right;
+    line-height: 22px;
+    color: white;
+}

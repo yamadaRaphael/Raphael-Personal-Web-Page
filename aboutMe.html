@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1.0"/>
+        <title>Yamada - VCard/About Me</title>
+        <!--Font Awesome-->
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+        <!--Animate css-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+        <!--Slick-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+        <!--Share StyleSheet-->
+        <link rel="stylesheet" type="text/css" href="./css/shareStyle.css">
+        <!--About Me StyleSheet-->
+        <link rel="stylesheet" type="text/css" href="./css/aboutMeStyle.css">
+        <!--JQuery-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"></script>
+        <!--Slick JS-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    </head>
+    <body>
+        <div class="background animated fadeInRight" id="background">
+            <div class="heading" id="headingDashline">
+                <h1 class="lang" key="aboutMe" id="h1title">About Me.</h1>
+                <i class="far fa-user"></i>
+            </div>
+            <section>
+                <h1 class="title">Raphael Tomohiko Yamada</h1>
+                <p class="text">I am an IT professional with international business experience focus on merge and enhance technology.
+                    My background in international business and currently as a computer technician gives me a mindset to
+                    help people to find a competent technology solution for the short and long term.
+                </p>
+                <p class="text"> 
+                    My passion is to listen and understand people and to help them to find an ideal solution to overcome technology/business barriers
+                    , but above all to preserve and oversee the companies' policies and values.
+                    Also, I consider myself an 'eternal student' where my eagerness for knowledge built my academic foundations with a 
+                    double degree in International Business & Marketing and a double Post-Degree in International Business & Informational Communication Technology.
+                </p>
+                <p class="text">
+                    My hunger for knowledge and for helping people turned into actions when<span id="dots">...</span><span class="readMore"> I worked as a student assistant at Douglas College.
+                    There, I used my skills to guide international and domestics students to inspire each other to interact and to create a multi-cultural environment
+                    where collectively we endeavour student's issues and rise as a better community.
+                    After that, I was hired as a temporary computer technician at Douglas College. There, I was able to use my skills to give an advanced in-person user support to troubleshoot
+                    hardware, application and network issues across campus and departments.
+                    </span>
+                </p>
+                <p class="text">
+                    <span class="readMore">
+                    Currently, I am available for new opportunities to challenge my knowledge, skills and to enhance my professional accomplishment and become a better person.
+                    Reach me out on this website in <a href="./contact.html">Contact Me<i class="fa fa-fw fa-envelope" id="contactIcon"></i></a> or through my email <a href="mailto:contactme@raphaelyamada.com" id="mailto">contactme@raphaelyamada.com</a>
+                    </span>
+                </p>
+                <div class="divReadMore">
+                    <hr>
+                    <button onclick="readMore()" id="btnReadMore" value="1"><i class="fas fa-angle-double-down"></i></button>
+                    <hr>
+                </div>
+                <!--Read More-->
+                <script type="text/javascript" src="./javascript/readMore/readmore.js"></script>
+                <h2>Raphael T. Yamada</h2>
+            </section>
+            <aside class="personalInfo">
+                <h1 class="title">Personal Information</h1>
+                <br>
+                <p class="category"><b>Name</b></p>
+                <p class="text"> : Raphael Tomohiko Yamada</p>
+                <br>
+                <p class="category"><b>Age</b></p>
+                <p class="text"> : 31 Years</p>
+                <br>
+                <p class="category"><b>Address</b></p>
+                <p class="text"> : 520, 10th Street</p>
+                <br>
+                <p class="category"><b>City</b></p>
+                <p class="text"> : New Westminster</p>
+                <br>
+                <p class="category"><b>Province</b></p>
+                <p class="text"> : British Columbia / Canada</p>
+                <br>
+                <p class="category"><b>Email</b></p>
+                <p class="text"> : contactme@raphaelyamada.com</p>
+                <br>
+                <p class="category"><b>Phone</b></p>
+                <p class="text"> : +1 (604) 704-6912</p>
+                <div class="button">
+                    <a id="btnDownload" href="./dowload/Resume.pdf" target="_blank" class="btn btn1" dowload>Dowload Resume</a>
+                </div>
+            </aside>
+            <div class="service" id="marginTopService">
+                <h1>Services</h1>
+                <div class="flexContainerService">
+                    <div>
+                        <i class="fas fa-laptop-medical"></i>
+                        <h2 class="subtitleService">Computer Technician</h2>
+                        <p class="text lang" key="computerTechnicianP">
+                            Advanced in-person support which involves troubleshoot in hardware, software and network with a high level of customer relationship .
+                        </p>
+                     </div>
+                    <div>
+                        <i class="fab fa-html5"></i>
+                        <h2 class="subtitleService">Web Development</h2>
+                        <p class="text">
+                            Modern and customized website which involves more than creating an engaging website using the concept of 'easy to use' .
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-palette"></i>
+                        <h2 class="subtitleService">UI/UX Designer</h2>
+                        <p class="text">
+                            I work closely with new marketing trends and designs to ensure a unique and custom-build experience for the end-user and for clients .
+                        </p>
+                    </div>
+                    <div>
+                        <i class="far fa-chart-bar"></i>
+                        <h2 class="subtitleService">Business Analyst</h2>
+                        <p class="text">
+                            Reducing the gap between business and Information Technology. Developing new strategies, optimizing the decision making, to decrease costs and to enhance the productivity .
+                        </p>
+                    </div>  
+                </div>
+            </div>
+            <div class="companyFlag">
+                <img id="flagBrasil" src="./media/pictures/flags/Brazil Flag.png" alt="Brasil">
+                <h1 class="subTitle">Previous Company</h1>
+                <img id="flagCanada" src="./media/pictures/flags/Canada Flag.png" alt="Canada">
+            </div>
+            <!--Slick Carouse-->
+            <div class="slick">
+                <div class="company">
+                    <a href="https://www.walmart.ca/en" target="_blank">
+                        <img src="./media/pictures/companies/Walmart_Canada_Logo.jpg" alt="Walmart Canada">
+                    </a>
+                </div>
+                <div class="company">
+                    <a href="https://www.18wheelslogistics.com/" target="_blank">
+                        <img src="./media/pictures/companies/18Wheels_Logistics-Logo.jpg" alt="18 Wheels Logistics">
+                    </a>
+                </div>
+                <div class="company">
+                    <a href="https://www.douglascollege.ca/" target="_blank">
+                        <img src="./media/pictures/companies/Douglas_College_Logo.jpg" alt="Doulgas College">
+                    </a>
+                </div>
+                <div class="company">
+                    <a href="https://cisatrading.com.br/?lang=en" target="_blank">
+                        <img src="./media/pictures/companies/Cisa-Trading-Logo.jpg" alt="Cisa Tarding">
+                    </a>
+                </div>
+                <div class="company">
+                    <a href="https://www.momentive.com/en-us" target="_blank">
+                        <img src="./media/pictures/companies/Momentive-Logo.jpg" alt="Momentive">
+                    </a>
+                </div>
+                <div class="company">
+                    <a href="https://www.hitachi-hightech.com" target="_blank">
+                        <img src="./media/pictures/companies/Hitachi-Logo.jpg" alt="Hitachi High Technologies">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Slick JS-->
+        <script type="text/javascript" src="./javascript/carouselEffect/slick.js"></script>
+        <!--Theme/Language changed-->
+        <script type="text/javascript" src="./javascript/themeLanguageChanged/aboutMe.js"></script>
+    </body>
+</html>
